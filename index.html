@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Daniel e Letícia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="beijo.ico " type="image/x-icon">
+</head>
+<body>
+    <div class="container" id="mainPage">
+        <div class="card">
+            <div class="header">
+                <img src="sua-imagem.svg" alt="Daniel e Letícia">
+                <h1>Daniel e Letícia</h1>
+            </div>
+            <div class="buttons">
+                <button id="timeButton" onclick="showTimePage()">Tempo Juntos 💍</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="timePage" style="display: none;">
+        <div class="card">
+            <div class="header">
+                <h1>Daniel e Letícia</h1>
+                <a href="#" onclick="showMainPage()" class="back-arrow">⬅️</a>
+            </div>
+            <div id="timeContainer" class="time-container">
+                <p>Estamos juntos há:</p>
+                <p id="years"></p>
+                <p id="months"></p>
+                <p id="days"></p>
+                <p id="hours"></p>
+                <p id="minutes"></p>
+                <p id="seconds"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
